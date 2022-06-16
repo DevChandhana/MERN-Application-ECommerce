@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Nothing much just a regular MERN application",
   "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "author": "ChandhanaReddy",
   "license": "MIT",
   "dependencies": {
