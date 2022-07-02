@@ -5,6 +5,8 @@ const bodyparser = require("body-parser");
 const cookieparser = require("cookie-parser");
 const cors = require("cors");
 
+const authRoutes = require("./routes/auth");
+
 const app = express();
 const port = process.env.PORT || 8080;
 
@@ -18,6 +20,8 @@ app.use(bodyparser.json());
 app.use(cookieparser());
 app.use(cors());
 
+// Routes
+app.use('/api', authRoutes);
 app.get("/", (req, res) => {
   return res.send("hello buddy!!");
 });
