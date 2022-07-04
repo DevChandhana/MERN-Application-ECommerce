@@ -55,13 +55,13 @@ userSchema
   .get(function () {
     return this._password;
   });
-userSchema.method = {
+userSchema.methods = {
   authenticate: function (plainPassword) {
     return this.securePassword(plainPassword) === this.encry_password;
   },
   // user is gonna pass password
   securePassword: function (plainPassword) {
-    if (!password) return "";
+    if (!plainPassword) return "";
     try {
       return crypto
         .createHmac("sha256", this.salt)
