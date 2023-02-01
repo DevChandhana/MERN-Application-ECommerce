@@ -20,7 +20,7 @@
     "i": "^0.3.7",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mongoose": "^6.3.8",
+    "mongoose": "^6.4.6",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.16",
     "npm": "^8.12.2",
